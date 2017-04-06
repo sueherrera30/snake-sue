@@ -1,0 +1,22 @@
+body{
+font-family: calibri;
+background: #FFEFD5;
+color:#8FBC8F;
+}
+#jaulita{
+  width:500px;
+  height: 500px;
+  background-color:#FAFAD2;
+  border:solid 4px;
+  border-color:	#FFE4B5;
+  margin:0 auto;
+}
+
+#viborita{
+  width:20px;
+  height: 20px;
+  background-color:#8FBC8F;
+  position:initial;
+  left:10px;
+  top:100px;
+  }
