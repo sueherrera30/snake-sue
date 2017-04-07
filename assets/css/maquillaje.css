@@ -9,7 +9,7 @@ color:#8FBC8F;
   background-color:#FAFAD2;
   border:solid 4px;
   border-color:	#FFE4B5;
-  margin:0 auto;
+  margin:auto auto;
 }
 
 #viborita{
@@ -17,6 +17,4 @@ color:#8FBC8F;
   height: 20px;
   background-color:#8FBC8F;
   position:initial;
-  left:10px;
-  top:100px;
   }

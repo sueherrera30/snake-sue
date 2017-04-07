@@ -1,28 +1,30 @@
-var viborita =document.getElementById('viborita');
 var posicionX = 0;
 var posicionY = 0;
-// var teclas ={
-//   left:37;
-//   right:39;
-//   up:38;
-//   down:40;
-// }
-viborita.addEventListener("keydown",avanzar);
+var viborita =document.getElementById('viborita');
 
- function avanzar(e){
-   var pruba= e.keycode;
-   console.log(prueba);
+document.addEventListener("keydown",avanzar);
+
+ function avanzar(){
+   switch(event.keyCode){
+     //down
+     case 40:
+      posicionY= posicionY + 20;
+      viborita.style.marginTop = posicionY + 'px';
+      break;
+      //up
+      case 38:
+      posicionY= posicionY - 20;
+      viborita.style.marginTop = posicionY  + 'px';
+      break;
+      //right
+      case 39:
+       posicionX = posicionX + 20;
+       viborita.style.marginLeft = posicionX + 'px';
+       break;
+       //left
+       case 37:
+       posicionX = posicionX - 20;
+       viborita.style.marginLeft = posicionX  + 'px';
+       break;
+   }
  }
- 
-
-  // switch (event.keycode){
-  //   case 37://izquierda
-  //   //solo se usara top para subir o bajar(+ o -) left que indica mov. de lados derecho o izq.
-  //   viborita.style.left = posicionX-10 + "px";
-  //   break;
-  //   case 39:
-  //   viborita.style.left= posicionX +10 +"px";
-  //   break;
-  //   case 38:
-  //   viborita.style.= posicionX +10 +"px";
-  //
